@@ -1,0 +1,21 @@
+.headboard
+    img.headboard__insignia(src="assets/img/general/insignia.png" alt="logo de la institucion")
+    .headboard__info
+        h2.headboard__subtitle Institución Educativa
+        h1.headboard__title "José Félix Iguaín"
+        h2.headboard__subtitle Luricocha - Intay
+    img.headboard__jec(src="assets/img/general/logo_jec.png" alt="logo jec")
+
+
+//- MENU DE LOS TIPOS DE MUEBLES CON FINCION VARIABLE ../config/config PARA AGREGAR MAS ...
+.menu-container
+    .logo__menu
+        label#menu-toggle.menu__show(for="checked")
+            i.fas.fa-bars
+        p.logo__menu-title Menu
+    ul#top-menu.top-menu.menu
+        a(href="https://www.facebook.com/jose.felixiguain.39").face-link
+            i.face-icon.fab.fa-facebook-square
+        each page, index in pages
+            li.menu__item
+                a(href= page + ".html").menu__link= page

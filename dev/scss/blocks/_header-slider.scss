@@ -1,0 +1,128 @@
+.slider{
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+    @include laptop{
+    }
+
+}
+
+.slider__container,
+.slides__images img,
+.navigation-manual,
+.navigation-auto{
+width: 100vw;
+
+    // @include laptop{
+    //     width: 88vw;
+    // }
+
+    // @include laptop{
+    //     width: 80vw;
+    // }
+}
+
+.slider__container,
+.slides,
+.slides__images img{
+height: 180px;
+
+    @include tablet{
+        height: 300px;
+    }
+
+    @include laptop{
+        height: 470px;
+    }
+
+}
+
+.slider__container{
+overflow: hidden;
+}
+
+.slides{
+position: relative;
+width: 500%;
+display: flex;
+}
+
+.slides-btn{
+display: none;
+}
+
+.slides__images{
+width: 20%;
+transition: 2s;
+}
+
+/*===================*/
+.navigation-auto,
+.navigation-manual{
+position: absolute;
+display: flex;
+justify-content: center;
+// background-color: red;
+}
+
+.auto-btn,
+.manual-btn{
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+}
+
+.auto-btn:not(:last-child),
+.manual-btn:not(:last-child){
+margin-right: 40px;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+margin-top: 2rem;
+z-index: -1;
+}
+
+.auto-btn:not(:last-child){
+margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio2:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4{
+// background: $white;
+}
+
+.navigation-manual{
+margin-top: -3rem;
+// background-color: red;
+}
+
+.manual-btn{
+cursor: pointer;
+}
+
+.manual-btn:hover{
+background: #493323;
+// background: $white;
+}
+
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+margin-left: -60%;
+}

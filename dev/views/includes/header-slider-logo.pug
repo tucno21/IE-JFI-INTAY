@@ -1,0 +1,35 @@
+// image slider start
+.slider
+    .slider__container
+        .slides
+            // radio buttons start
+            input#radio1.slides-btn(type='radio' name='radio-btn')
+            input#radio2.slides-btn(type='radio' name='radio-btn')
+            input#radio3.slides-btn(type='radio' name='radio-btn')
+            input#radio4.slides-btn(type='radio' name='radio-btn')
+            // radio buttons end
+            // slide images start
+            .slides__images.first
+                img(src='assets/img/slider/1.jpg' alt='colegio intay')
+            .slides__images
+                img(src='assets/img/slider/2.jpg' alt='aviso del colegio intay')
+            .slides__images
+                img(src='assets/img/slider/3.jpg' alt='actividades de jfi')
+            .slides__images
+                img(src='assets/img/slider/4.jpg' alt='peronal de la ie')
+            // slide images end
+            // automatic navigation start
+            .navigation-auto
+                .auto-btn.auto-btn1
+                .auto-btn.auto-btn2
+                .auto-btn.auto-btn3
+                .auto-btn.auto-btn4
+            // automatic navigation end
+            // manual navigation start
+        .navigation-manual
+            label.manual-btn(for='radio1')
+            label.manual-btn(for='radio2')
+            label.manual-btn(for='radio3')
+            label.manual-btn(for='radio4')
+            // manual navigation end
+// image slider end

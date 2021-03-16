@@ -1,0 +1,15 @@
+@import "config/fonts";
+@import "config/color";
+
+@import "mixins/breakpoints";
+@import "mixins/reset-list";
+
+@import "base/base";
+@import "base/normalize";
+
+@import "blocks/header";
+@import "blocks/header-slider";
+
+@import "blocks/main-index";
+
+@import "blocks/footer";

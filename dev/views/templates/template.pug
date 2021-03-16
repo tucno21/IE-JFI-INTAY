@@ -1,0 +1,27 @@
+//- muy importante para que las variables funcionen
+include ../config/config
+
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel='icon' type='image/png' sizes='32x32' href='assets/img/favicon.png')
+        link(rel="stylesheet" href="css/styles.css")
+        script(src="https://kit.fontawesome.com/1d88763075.js" crossorigin="anonymous")
+
+        title IE-JFI
+    body
+        header#header.header
+            block header
+            block slider-logo
+
+        main#main.main
+            block main
+
+        footer.footer
+            block footer
+
+        block scripts
+        script(src="js/scripts-min.js")

@@ -1,0 +1,23 @@
+:root{
+    --green: #009933;
+    --dark-green: #09772E;
+    --primary:#ffffff;
+    --secondary:#000000;
+    --shade: 0px 0px 12px -1px rgba(0,0,0,0.5);;
+    --border-line: 1px solid rgba(0, 0, 0, 0.3);
+    --line: 1px solid red;
+    --curve-little:.5rem;
+    --curve-big:1rem;
+    --curve-botton:.5rem;
+}
+
+$green:var(--green);
+$dark-green:var(--dark-green);
+$primary:var(--primary);
+$secondary:var(--secondary);
+$shade: var(--shade);
+$border-line: var(border-line);
+$line: var(--line);
+$curve-little:var(--curver-little);
+$curve-big:var(--curve-big);
+$curve-bottom:var(--curve-botton);

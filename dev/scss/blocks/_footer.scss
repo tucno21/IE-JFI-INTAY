@@ -1,0 +1,47 @@
+.footer{
+    background-color: $secondary;
+    color: $primary;
+
+    &__contacto{
+        padding: 1rem;
+        font-size: $size-font-big;
+        font-weight: $line-font-thick;
+    }
+
+    &__home,
+    &__numero{
+        display: flex;
+        align-items: center;
+        font-weight: $line-font-slim;
+
+        & p{
+            margin-left: 1rem;
+            padding: .5rem 0;
+        }
+    }
+
+    &__dev{
+        text-align: center;
+        font-weight: $line-font-slim;
+        opacity: .5;
+        padding: .5rem;
+    }
+
+    @include laptop{
+
+        &__info-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &__contacto{
+            font-size: $size-font-big;
+        }
+
+        &__home,
+        &__numero{
+            font-size: $size-font-medium;
+        }
+    }
+}

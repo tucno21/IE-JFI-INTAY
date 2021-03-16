@@ -1,0 +1,51 @@
+.main{
+    padding: 1rem;
+
+    &__card{
+        display: block;
+        // background-color: blue;
+        margin: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: $shade;
+        text-decoration: none;
+        color: $secondary;
+        text-transform: uppercase;
+        border: $border-line;
+
+        &-image{
+            width: 10rem;
+            height: 9rem;
+        }
+
+        &-title{
+            font-size: $size-font-medium;
+            font-weight: $line-font-thick;
+            padding: 1rem;
+        }
+    }
+
+    @include laptop{
+        display: flex;
+        justify-content: center;
+
+        &__card{
+            height: 15rem;
+            width: 29rem;
+
+            &-image{
+                width: 11rem;
+                height: 10rem;
+            }
+    
+            &-title{
+                font-size: $size-font-big;
+            }
+
+            &:hover{
+                background-color: $green;
+                color: $primary;
+            }
+        }
+    }
+}

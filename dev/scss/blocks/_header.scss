@@ -1,0 +1,142 @@
+/*==========================*/
+/*HEADER*/
+.headboard{
+    display:flex;
+    background-color: $green;
+    align-items: center;
+    justify-content: space-between;
+    height: 7.5rem;
+    max-width: 100vw;
+    padding: 0 2rem;
+    color: $primary;
+    
+    &__info{
+        text-align: center;
+    }
+
+    &__subtitle{
+        font-size: $size-font-little;
+        font-weight: $line-font-slim;
+    }
+
+    &__title{
+        font-size: $size-font-medium;
+        font-weight: $line-font-semi-slim;
+        margin: .4rem;
+    }
+
+    &__insignia{
+        max-width: 16%;
+    }
+    &__jec{
+        max-width: 25%;
+    }
+
+    @include laptop{
+        height: 13rem;
+        justify-content: center;
+
+        &__info{
+            margin: 0 5rem;
+        }
+    
+        &__subtitle{
+            font-size: $size-font-big;
+        }
+    
+        &__title{
+            font-size: 3.5rem;
+            margin: .4rem;
+        }
+    
+        &__insignia{
+            max-width: 8%;
+        }
+        &__jec{
+            max-width: 12%;
+        }
+    }
+}
+
+
+//========menu
+
+.menu-container{
+    color: $primary;
+    position: relative;
+    z-index: 10;
+}
+
+.logo__menu{
+    background-color: $dark-green;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: .7rem 1rem;
+
+    &-title{
+        font-weight: $line-font-slim;
+        padding-left: .6rem;
+    }
+
+    @include laptop{
+        display: none;
+    }
+}
+
+.face-link{
+    padding: .8rem;
+    text-align: center;
+}
+.face-icon{
+    color: $primary;
+    font-size: $size-font-superbig;
+}
+
+
+.menu{
+    @include reset-list;
+    background-color: $green;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    transition: transform .3s;
+    transform: translateX(-100%);
+    
+    &__item{
+        border-bottom: 1px solid $dark-green;
+    }
+    &__link{
+        color: $primary;
+        padding: 1rem 1.5rem;
+        display: block;
+        text-decoration: none;
+        font-size: $size-font-medium;
+        text-transform: uppercase;
+    }
+
+    @include laptop{
+        position: relative;
+        background-color: $dark-green;
+        transform: translateX(0);
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+
+        &__link{
+            
+            &:hover{
+                background-color: black;
+            }
+        }
+    }
+}
+
+
+
+.top-menu.activador{
+    transition: transform .3s;
+    transform: translate(0);
+}
