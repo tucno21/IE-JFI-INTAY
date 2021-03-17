@@ -16,6 +16,9 @@
     ul#top-menu.top-menu.menu
         a(href="https://www.facebook.com/jose.felixiguain.39").face-link
             i.face-icon.fab.fa-facebook-square
-        each page, index in pages
-            li.menu__item
-                a(href= page + ".html").menu__link= page
+
+        li.menu__item: a.menu__link(href='/') inicio
+        li.menu__item: a.menu__link(href='logindocentes.html') docentes
+        li.menu__item: a.menu__link(href='estudiantes.html') estudiantes
+        li.menu__item: a.menu__link(href='padres.html') padres
+        li.menu__item: a.menu__link(href='documentos.html') documentos
