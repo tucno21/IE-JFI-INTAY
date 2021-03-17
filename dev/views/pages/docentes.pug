@@ -1,0 +1,22 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+
+block main
+    a(href="logindocentes.html").main__card
+        img(src="assets/img/general/docentes.svg" alt="logo docentes").main__card-image
+        p.main__card-title Docentes
+
+    a(href="estudiantes.html").main__card
+        img(src="assets/img/general/estudiantes.svg" alt="logo estudiantes").main__card-image
+        p.main__card-title Estudiantes
+
+    a(href="padres.html").main__card
+        img(src="assets/img/general/padres.svg" alt="logo padres").main__card-image
+        p.main__card-title Padres
+
+
+
+block footer
+    include ../includes/footer
