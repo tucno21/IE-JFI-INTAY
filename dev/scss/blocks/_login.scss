@@ -64,6 +64,10 @@
         &:focus{
             border-color: $primary;
         }
+
+        @include laptop{
+            width: 25rem;
+        }
     }
 
     &__label{
