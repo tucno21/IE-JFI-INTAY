@@ -241,7 +241,7 @@ template { display: none; }
 
 @media screen and (min-width: 1024px) { .form__input { width: 25rem; } }
 
-.form__label { position: absolute; color: var(--primary); left: 50%; top: 40%; transform: translateX(-50%); font-weight: 200; font-size: 1.5rem; cursor: text; background-color: var(--green); transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in; color: var(--primary); }
+.form__label { position: absolute; color: var(--primary); left: 50%; top: 40%; transform: translateX(-50%); font-weight: 200; cursor: text; background-color: var(--green); transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in; color: var(--primary); }
 
 .form__button { width: 10rem; height: 3.5rem; background-color: var(--primary); font-size: 1.5rem; outline: none; color: var(--dark-green); border: 1px solid var(--primary); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; border-radius: .3rem; }
 

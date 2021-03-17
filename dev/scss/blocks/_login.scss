@@ -78,7 +78,7 @@
         top: 40%;
         transform: translateX(-50%);
         font-weight: $line-font-slim;
-        font-size: $size-font-medium;
+        // font-size: $size-font-medium;
         cursor: text;
         background-color: $green;
         transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
