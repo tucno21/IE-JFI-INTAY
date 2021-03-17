@@ -233,7 +233,7 @@ template { display: none; }
 
 .form__box { position: relative; padding-bottom: .4rem; }
 
-.form__input { position: relative; left: 50%; transform: translateX(-50%); outline: none; display: block; background-color: var(--green); border: 2px solid var(--dark-green); margin: 1.5rem 0; padding: .3rem; border-radius: .3rem; color: var(--primary); height: 3rem; width: 20rem; }
+.form__input { position: relative; left: 50%; transform: translateX(-50%); outline: none; display: block; background-color: var(--green); border: 2px solid var(--dark-green); margin: 1.5rem 0; padding: .3rem; border-radius: .3rem; color: var(--primary); height: 3rem; width: 20rem; font-size: 1.5rem; }
 
 .form__input:hover { border-color: var(--primary); }
 
