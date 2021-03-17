@@ -1,0 +1,103 @@
+.form-container{
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.form{
+    background-color: $green;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include laptop{
+        height: 40rem;
+        width: 50rem;
+    }
+
+    &__logo{
+        height: 4rem;
+        width: 4rem;
+        padding-top: 1rem;
+    }
+
+    &__title{
+        color: $primary;
+        font-size: $size-font-superbig;
+        padding: 1rem;
+    }
+
+    &__subtitle{
+        font-size: $size-font-medium;
+        font-weight: $line-font-slim;
+        color: $primary;
+        padding-bottom: .6rem;
+    }
+
+    &__box{
+        position: relative;
+        padding-bottom: .4rem;
+    }
+    
+    &__input{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        outline: none;
+        display: block;
+        background-color: $green;
+        border: 2px solid $dark-green;
+        margin: 1.5rem 0;
+        padding: .3rem;
+        border-radius: .3rem;
+        color: $primary;
+        height: 3rem;
+        width: 20rem;
+
+        &:hover{
+            border-color: $primary;
+        }
+        &:focus{
+            border-color: $primary;
+        }
+    }
+
+    &__label{
+        position: absolute;
+        color: $primary;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+        font-weight: $line-font-slim;
+        cursor: text;
+        background-color: $green;
+        transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+        color: $primary;
+    }
+
+    &__button{
+        width: 10rem;
+        height: 3.5rem;
+        background-color: $primary;
+        font-size: $size-font-medium;
+        outline: none;
+        color: $dark-green;
+        border: 1px solid $primary;
+        font-weight: $line-font-semi-thick;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: .3rem;
+    }
+}
+
+
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+    top: 15%;
+    font-size: 1rem;
+}

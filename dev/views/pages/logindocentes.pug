@@ -3,11 +3,21 @@ extends ../templates/template
 block header
     include ../includes/header-menu
 
-block slider-logo
-    include ../includes/header-slider-logo
-
 block main
-    iframe(width='560' height='315' src='https://script.google.com/macros/s/AKfycbzgviYdr-P7JSOSbjtVDYOOhGyPBkTT5cN7Hk3gwqU/dev')
+    .form-container
+        form(action='#').form
+            img(src="assets/img/general/docentes.svg" alt="logo docentes").form__logo
+            p.form__title Docentes
+            p.form__subtitle La información es solo para Docentes
+            .form__box
+                input#input1(type='email' placeholder=' ').form__input
+                label.form__label.form__label-a(for='email') Email
+
+            .form__box
+                input#input2(type='password' placeholder=' ').form__input
+                label.form__label.form__label-b(for='email') Contraseña
+
+            button(name='masuk').form__button Entrar
 
 
 
