@@ -1,0 +1,31 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+
+block main
+    .section__information
+        .box-container
+            img(src="assets/img/general/padres.svg" alt="logo padres").box-container__image
+            p.box-container__title Padres
+
+        .box-information
+            a(href="").information
+                img.information__image(src="assets/img/general/regevidencias.svg" alt="logo registro de evidencia")
+                p.information__paragraph Registro de evidencia.
+            a(href="directorioDocente.html").information
+                img.information__image(src="assets/img/general/regEstudiane.svg" alt="logo directorio")
+                p.information__paragraph Directorio de Docentes.
+
+        .box-information
+            a(href="horario.html").information
+                img.information__image(src="assets/img/general/horario.svg" alt="logo horario")
+                p.information__paragraph Horario.
+            a(href="https://aprendoencasa.pe/").information
+                img.information__image(src="assets/img/general/aprendoCasa.png" alt="logo aprendo casa")
+                p.information__paragraph Aprendo en Casa.
+
+
+
+block footer
+    include ../includes/footer

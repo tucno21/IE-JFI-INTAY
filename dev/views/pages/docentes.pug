@@ -4,17 +4,26 @@ block header
     include ../includes/header-menu
 
 block main
-    a(href="logindocentes.html").main__card
-        img(src="assets/img/general/docentes.svg" alt="logo docentes").main__card-image
-        p.main__card-title Docentes
+    .section__information
+        .box-container
+            img(src="assets/img/general/docentes.svg" alt="logo docentes").box-container__image
+            p.box-container__title Docentes
 
-    a(href="estudiantes.html").main__card
-        img(src="assets/img/general/estudiantes.svg" alt="logo estudiantes").main__card-image
-        p.main__card-title Estudiantes
+        .box-information
+            a(href="").information
+                img.information__image(src="assets/img/general/regEstudiane.svg" alt="logo de directorio de estudiante")
+                p.information__paragraph Directorio de Estudiantes.
+            a(href="reunion.html").information
+                img.information__image(src="assets/img/general/reunion.svg" alt="logo de reunion")
+                p.information__paragraph Link de reunión.
 
-    a(href="padres.html").main__card
-        img(src="assets/img/general/padres.svg" alt="logo padres").main__card-image
-        p.main__card-title Padres
+        .box-information
+            a(href="horario.html").information
+                img.information__image(src="assets/img/general/horario.svg" alt="logo horario")
+                p.information__paragraph Horario.
+            a(href="").information
+                img.information__image(src="assets/img/general/carpeta.svg" alt="logo carpeta pedagogica")
+                p.information__paragraph Carpeta Pedagógica.
 
 
 

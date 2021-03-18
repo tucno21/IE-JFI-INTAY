@@ -1,0 +1,31 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+
+block main
+    .section__information
+        .box-container
+            img(src="assets/img/general/carpeta.svg" alt="logo carpeta").box-container__image
+            p.box-container__title Documentos de Gestion de la IE-"JFI"
+
+        .box-information
+            a(href="").information
+                img.information__image(src="assets/img/general/documento.svg" alt="logo documento")
+                p.information__paragraph Proyecto Educativo Institucional - PEI
+            a(href="").information
+                img.information__image(src="assets/img/general/documento.svg" alt="logo documento")
+                p.information__paragraph Plan Anual de Trabajo - PAT
+
+        .box-information
+            a(href="").information
+                img.information__image(src="assets/img/general/documento.svg" alt="logo documento")
+                p.information__paragraph Reglamento Interno - RI
+            a(href="").information
+                img.information__image(src="assets/img/general/documento.svg" alt="logo documento")
+                p.information__paragraph Proyecto Curricular Institucional - PCI
+
+
+
+block footer
+    include ../includes/footer
