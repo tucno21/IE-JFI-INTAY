@@ -1,0 +1,37 @@
+.meeting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    &__container{
+        // border: 1px solid red;
+        padding: 1rem;
+        text-decoration: none;
+        color: $secondary;
+        margin: 2rem 1rem;
+        width: 24rem;
+        height: 12rem;
+        box-shadow: $shade;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @include laptop{
+            width: 50rem;
+            height: 12rem;
+        }
+    }
+
+    &__image{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__paragraph{
+        font-size: $size-font-big;
+    }
+}

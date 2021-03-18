@@ -233,6 +233,40 @@ template { display: none; }
 
 .information__paragraph { margin-left: .5rem; font-size: 2rem; }
 
+.meeting { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.meeting__container { padding: 1rem; text-decoration: none; color: var(--secondary); margin: 2rem 1rem; width: 24rem; height: 12rem; box-shadow: var(--shade); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+
+@media screen and (min-width: 1024px) { .meeting__container { width: 50rem; height: 12rem; } }
+
+.meeting__image { width: 5rem; height: 5rem; }
+
+.meeting__paragraph { font-size: 1.8rem; }
+
+.schedule__container { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 98%; margin: 1rem 0; }
+
+.schedule__image { max-width: 100%; border: 1px solid red; }
+
+.schedule__paragraph { font-size: 2rem; font-weight: 800; }
+
+@media screen and (min-width: 1024px) { .teaching { width: 70%; } }
+
+.teaching__title { text-align: center; margin: 1rem 0; }
+
+.teaching-directory { display: grid; grid-template-columns: 6% 29% 29% 20% 8% 8%; }
+
+.teaching-directory-title { background-color: var(--dark-green); color: var(--primary); }
+
+.teaching-directory__orden, .teaching-directory__name, .teaching-directory__area, .teaching-directory__phone, .teaching-directory__call, .teaching-directory__whatsapp { border: 1px solid var(--secondary); display: flex; align-items: center; justify-content: center; padding: .3rem .1rem; font-size: 1rem; }
+
+.teaching-directory__call, .teaching-directory__whatsapp { font-size: 1.9rem; padding: 0; }
+
+.teaching-directory__whatsapp i { color: #25D366; }
+
+.teaching-directory__call-title, .teaching-directory__whatsapp-title { font-size: 1rem; }
+
+@media screen and (min-width: 1024px) { .teaching-directory__orden, .teaching-directory__name, .teaching-directory__area, .teaching-directory__phone, .teaching-directory__call, .teaching-directory__whatsapp { font-size: 1.8rem; } }
+
 .form-container { margin: 2rem 0; padding: 1rem; }
 
 .form { background-color: var(--green); text-align: center; position: relative; padding: 1rem; height: 50rem; display: flex; flex-direction: column; justify-content: center; align-items: center; }

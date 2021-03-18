@@ -1,0 +1,21 @@
+.schedule{
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        margin: 1rem 0;
+    }
+    
+    &__image{
+        max-width: 100%;
+        border: 1px solid red;
+    }
+
+    &__paragraph{
+        font-size: $size-font-superbig;
+        font-weight: $line-font-thick;
+    }
+}

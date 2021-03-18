@@ -1,0 +1,60 @@
+.teaching{
+
+    @include laptop{
+        width: 70%;
+    }
+}
+
+.teaching__title{
+    text-align: center;
+    margin: 1rem 0;
+}
+.teaching-directory{
+    display: grid;
+    // grid-template-columns: .5fr 4fr 3fr 2fr .5fr .5fr;
+    grid-template-columns: 6% 29% 29% 20% 8% 8%;
+
+    &-title{
+        background-color: $dark-green;
+        color: $primary;
+    }
+    
+    &__orden,
+    &__name,
+    &__area,
+    &__phone,
+    &__call,
+    &__whatsapp{
+        border: 1px solid $secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .3rem .1rem;
+        font-size: $size-font-little;
+    }
+    &__call,
+    &__whatsapp{
+        font-size: 1.9rem;
+        padding: 0;
+    }
+
+    &__whatsapp i{
+        color:#25D366;
+    }
+
+    &__call-title,
+    &__whatsapp-title{
+        font-size: $size-font-little;
+    }
+
+    @include laptop{
+        &__orden,
+        &__name,
+        &__area,
+        &__phone,
+        &__call,
+        &__whatsapp{
+            font-size: $size-font-big;
+        }
+    }
+}
