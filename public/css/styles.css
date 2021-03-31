@@ -319,11 +319,11 @@ template { display: none; }
 
 @media screen and (min-width: 1024px) { .iframe { height: 50rem; } }
 
-.noticia_ie { min-height: 60vh; }
+.noticia_ie { min-height: 60vh; margin: 0 auto; }
 
-.iframe_index { min-height: 60vh; }
+.iframe_index { min-height: 60vh; width: 90%; }
 
-.information-container { margin: 0 auto; border: 1px solid red; }
+.information-container { border: 1px solid red; }
 
 .footer { background-color: var(--secondary); color: var(--primary); }
 
