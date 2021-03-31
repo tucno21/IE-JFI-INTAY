@@ -205,7 +205,7 @@ template { display: none; }
 
 #radio4:checked ~ .first { margin-left: -60%; }
 
-.mainindex { padding: 1rem; min-height: 68vh; }
+.mainindex { padding: 1rem; }
 
 .mainindex__card { display: block; margin: 1.5rem; padding: 1rem; text-align: center; box-shadow: var(--shade); text-decoration: none; color: var(--secondary); text-transform: uppercase; border: var(border-line); }
 
@@ -319,7 +319,7 @@ template { display: none; }
 
 @media screen and (min-width: 1024px) { .iframe { height: 50rem; } }
 
-.information-container { border: 1px solid red; }
+.information-container { margin: 0 auto; border: 1px solid red; }
 
 .footer { background-color: var(--secondary); color: var(--primary); }
 
