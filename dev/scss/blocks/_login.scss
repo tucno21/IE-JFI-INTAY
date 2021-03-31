@@ -109,12 +109,23 @@
 }
 
 //==========iframe
-.iframe{
-    width: 100%;
-    height: 60rem;
-    border: none;
+.login-docentesjfi{
+    min-width: 99%;
+    
 
     @include laptop{
+        width: 50%;
+    }
+}
+
+.iframe{
+    display: block;
+    height: 60rem;
+    width: 100%;
+    border: none;
+    
+    @include laptop{
         height: 50rem;
+
     }
 }
