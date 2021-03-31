@@ -319,7 +319,7 @@ template { display: none; }
 
 @media screen and (min-width: 1024px) { .iframe { height: 50rem; } }
 
-.information-container { margin: 0 auto; border: 1px solid red; }
+.information-container { margin: 0 auto; border: 1px solid red; min-height: 30vh; }
 
 .footer { background-color: var(--secondary); color: var(--primary); }
 
