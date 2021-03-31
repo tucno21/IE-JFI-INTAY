@@ -7,23 +7,30 @@ block slider-logo
     include ../includes/header-slider-logo
 
 block main
-    .mainindex
-        a(href="logindocentes.html").mainindex__card
-            img(src="assets/img/general/docentes.svg" alt="logo docentes").mainindex__card-image
-            p.mainindex__card-title Docentes
+    .main-idex-portada
+        .mainindex
+            a(href="logindocentes.html").mainindex__card
+                img(src="assets/img/general/docentes.svg" alt="logo docentes").mainindex__card-image
+                p.mainindex__card-title Docentes
 
-        a(href="estudiantes.html").mainindex__card
-            img(src="assets/img/general/estudiantes.svg" alt="logo estudiantes").mainindex__card-image
-            p.mainindex__card-title Estudiantes
+            a(href="estudiantes.html").mainindex__card
+                img(src="assets/img/general/estudiantes.svg" alt="logo estudiantes").mainindex__card-image
+                p.mainindex__card-title Estudiantes
 
-        a(href="padres.html").mainindex__card
-            img(src="assets/img/general/padres.svg" alt="logo padres").mainindex__card-image
-            p.mainindex__card-title Padres
+            a(href="padres.html").mainindex__card
+                img(src="assets/img/general/padres.svg" alt="logo padres").mainindex__card-image
+                p.mainindex__card-title Padres
 
-    .noticia_ie
-        iframe.iframe_index(src='https://script.google.com/a/ayacucho.edu.pe/macros/s/AKfycbzM-vNN1sWq-qmw3AZydDvMp25-LbXX63BN76KAPw/exec')
-
+        .noticia-ie
+            p.noticia-ie__title Comunicado
+            .noticia-ie__imagen
+                img(src="assets/img/noticia/noticiaa.jpg" alt="imagenes noticia")
+            .noticia-ie__imagen
+                img(src="assets/img/noticia/noticiab.jpg" alt="imagenes noticia")
 
 
 block footer
     include ../includes/footer
+
+
+//- iframe.iframe_index(src='https://script.google.com/a/ayacucho.edu.pe/macros/s/AKfycbzM-vNN1sWq-qmw3AZydDvMp25-LbXX63BN76KAPw/exec')

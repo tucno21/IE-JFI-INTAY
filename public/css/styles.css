@@ -205,6 +205,8 @@ template { display: none; }
 
 #radio4:checked ~ .first { margin-left: -60%; }
 
+.main { min-height: 68vh; padding: 1rem; display: flex; justify-content: center; }
+
 .mainindex { padding: 1rem; }
 
 .mainindex__card { display: block; margin: 1.5rem; padding: 1rem; text-align: center; box-shadow: var(--shade); text-decoration: none; color: var(--secondary); text-transform: uppercase; border: var(border-line); }
@@ -218,6 +220,14 @@ template { display: none; }
   .mainindex__card-image { width: 11rem; height: 10rem; }
   .mainindex__card-title { font-size: 1.8rem; }
   .mainindex__card:hover { background-color: var(--green); color: var(--primary); } }
+
+.noticia-ie { padding: 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.noticia-ie__title { font-size: 2.5rem; font-weight: bold; text-transform: uppercase; }
+
+.noticia-ie__imagen { text-align: center; margin: 1rem; }
+
+.noticia-ie__imagen img { box-shadow: var(--shade); max-width: 95%; }
 
 .box-container { display: flex; flex-direction: column; align-items: center; padding: 1rem; margin-bottom: 2rem; }
 
@@ -287,7 +297,9 @@ template { display: none; }
 
 .tablet:target .tablet__btn { color: var(--secondary); }
 
-.form-container { margin: 2rem 0; padding: 1rem; }
+.form-container { margin: 2rem 0; padding: 1rem; width: 100%; }
+
+@media screen and (min-width: 1024px) { .form-container { width: auto; } }
 
 .form { background-color: var(--green); text-align: center; position: relative; padding: 1rem; height: 50rem; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
@@ -315,15 +327,13 @@ template { display: none; }
 
 .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label { top: 15%; font-size: 1rem; }
 
-.iframe { width: 100%; height: 60rem; border: none; }
+.login-docentesjfi { width: 100%; }
 
-@media screen and (min-width: 1024px) { .iframe { height: 50rem; } }
+@media screen and (min-width: 1024px) { .login-docentesjfi { width: 78%; } }
 
-.noticia_ie { min-height: 60vh; margin: 0 auto; }
+.iframe { height: 60rem; width: 100%; border: none; }
 
-.iframe_index { min-height: 60vh; width: 90%; }
-
-.information-container { border: 1px solid red; }
+@media screen and (min-width: 1024px) { .iframe { height: 48rem; } }
 
 .footer { background-color: var(--secondary); color: var(--primary); }
 

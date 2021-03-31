@@ -1,0 +1,27 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+
+block main
+    .form-container
+        form(action='#').form
+            img(src="assets/img/general/estudiantes.svg" alt="logo estudiantes").form__logo
+            p.form__title Registro de Evidencias
+            p.form__subtitle La información es personalizado
+            .form__box
+                input#input1(type='text' placeholder=' ').form__input
+                label.form__label.form__label-a(for='email') Primer Nombre
+
+            .form__box
+                input#input2(type='password' placeholder=' ').form__input
+                label.form__label.form__label-b(for='email') N° de DNI
+
+            button(name='masuk').form__button Entrar
+
+
+
+
+
+block footer
+    include ../includes/footer

@@ -1,6 +1,32 @@
+/==========iframe
+.login-docentesjfi{
+    width: 100%;
+
+    @include laptop{
+        width: 78%;
+    }
+}
+
+.iframe{
+    height: 60rem;
+    width: 100%;
+    border: none;
+    
+    @include laptop{
+        height: 48rem;
+    }
+}
+
+//====================================
+
 .form-container{
     margin: 2rem 0;
     padding: 1rem;
+    width: 100%;
+
+    @include laptop{
+        width: auto;
+    }
 }
 
 .form{
@@ -106,26 +132,4 @@
 .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
     top: 15%;
     font-size: 1rem;
-}
-
-//==========iframe
-.login-docentesjfi{
-    min-width: 99%;
-    
-
-    @include laptop{
-        width: 50%;
-    }
-}
-
-.iframe{
-    display: block;
-    height: 60rem;
-    width: 100%;
-    border: none;
-    
-    @include laptop{
-        height: 50rem;
-
-    }
 }
