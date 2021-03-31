@@ -303,7 +303,7 @@ template { display: none; }
 
 .iframe { height: 60rem; width: 100%; border: none; }
 
-@media screen and (min-width: 1024px) { .iframe { height: 48rem; } }
+@media screen and (min-width: 1024px) { .iframe { height: 51rem; } }
 
 .form-container { margin: 2rem 0; padding: 1rem; width: 100%; }
 
