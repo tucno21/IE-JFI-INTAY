@@ -58,3 +58,38 @@
         }
     }
 }
+
+
+.directorioEstudiantes{
+    // display: block;
+    // width: 100%;
+
+    &__box{
+    }
+    
+    &__box-a{
+        // border: 1px solid red;
+        text-align: center;
+    }
+    
+    &__box-b{
+        width: auto;
+        // position: relative;
+        // left: 50%;
+    }
+
+    &__title{
+        font-size: $size-font-big;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+
+    &__iframe{
+        height: 20rem;
+        // width: 50rem;
+        width: 100%;
+        outline: none;
+        border: none;
+    }
+}

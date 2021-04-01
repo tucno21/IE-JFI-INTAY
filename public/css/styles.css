@@ -277,6 +277,14 @@ template { display: none; }
 
 @media screen and (min-width: 1024px) { .teaching-directory__orden, .teaching-directory__name, .teaching-directory__area, .teaching-directory__phone, .teaching-directory__call, .teaching-directory__whatsapp { font-size: 1.8rem; } }
 
+.directorioEstudiantes__box-a { text-align: center; }
+
+.directorioEstudiantes__box-b { width: auto; }
+
+.directorioEstudiantes__title { font-size: 1.8rem; text-transform: uppercase; margin-bottom: .5rem; font-weight: bold; }
+
+.directorioEstudiantes__iframe { height: 20rem; width: 100%; outline: none; border: none; }
+
 .section__tablet { width: 100%; text-align: center; }
 
 .tablet { overflow: hidden; border-radius: .8rem; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); margin: 2rem 0; }
