@@ -337,15 +337,15 @@ template { display: none; }
 
 .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label { top: 7%; font-size: 1.2rem; }
 
-.listaform { display: flex; flex-direction: column; align-items: center; padding: 1rem; background-color: green; }
+.listaform { display: flex; flex-direction: column; align-items: center; padding: 1rem; background-color: var(--green); }
 
 .listaform__box { margin: .8rem 0; font-size: 1.5rem; display: flex; flex-direction: column; align-items: center; }
 
 .listaform__despegable { color: #fff; }
 
-.listaform__selector { width: 30rem; height: 3rem; color: green; border: none; text-align: center; }
+.listaform__selector { width: 30rem; height: 3rem; color: var(--green); border: none; text-align: center; }
 
-.listaform__boton { width: 20rem; height: 3.5rem; background-color: #fff; color: green; font-weight: bold; border: none; border-radius: .5rem; }
+.listaform__boton { width: 20rem; height: 3.5rem; background-color: #fff; color: var(--green); font-weight: bold; border: none; border-radius: .5rem; }
 
 .footer { background-color: var(--secondary); color: var(--primary); }
 
