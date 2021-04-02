@@ -355,19 +355,19 @@ template { display: none; }
 
 .listaform__boton { width: 20rem; height: 3.5rem; background-color: #fff; color: var(--green); font-weight: bold; border: none; border-radius: .5rem; }
 
-.directorioestudiante { background-color: green; display: flex; flex-direction: column; align-items: center; }
+.directorioestudiante { background-color: green; display: flex; flex-direction: column; align-items: center; height: 100vh; }
 
-.directorioestudiante__titlegeneral { text-align: center; font-size: 2rem; color: #fff; padding: 1.5rem; }
+.directorioestudiante__titlegeneral { text-align: center; font-size: 2rem; color: #fff; padding: 1.5rem; margin-top: 2rem; }
 
 .directorioestudiante__datos { border: 2px solid #fff; width: 100%; }
 
 .directorioestudiante__nameEs { display: flex; justify-content: center; margin: 1.5rem; }
 
-.directorioestudiante__estu { padding: .8rem; width: 7rem; font-weight: bold; font-size: 1.3rem; border: 1px solid #fff; }
+.directorioestudiante__estu { padding: .8rem; width: 7rem; font-weight: bold; font-size: 1.3rem; color: #fff; border: 1px solid #fff; }
 
 .directorioestudiante__estux { background-color: #fff; padding: .8rem; width: 30rem; font-size: 1.3rem; }
 
-.directorioestudiante__titlephone { padding: .8rem; width: 7rem; font-weight: bold; font-size: 1.3rem; border: 1px solid #fff; }
+.directorioestudiante__titlephone { padding: .8rem; width: 7rem; font-weight: bold; font-size: 1.3rem; color: #fff; border: 1px solid #fff; }
 
 .directorioestudiante__numberphone { padding: .8rem; width: 19rem; font-size: 1.3rem; background-color: #fff; }
 
