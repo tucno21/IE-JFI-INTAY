@@ -357,22 +357,24 @@ template { display: none; }
 
 .directorioestudiante { background-color: green; display: flex; flex-direction: column; align-items: center; }
 
-.directorioestudiante__titlegeneral { text-align: center; font-size: 1.5rem; color: #fff; }
+.directorioestudiante__titlegeneral { text-align: center; font-size: 2rem; color: #fff; padding: 1.5rem; }
 
 .directorioestudiante__datos { border: 2px solid #fff; width: 100%; }
 
-.directorioestudiante__nameEs { /* border: 1px solid blue; */ display: flex; justify-content: center; }
+.directorioestudiante__nameEs { /* border: 1px solid blue; */ display: flex; justify-content: center; margin: 1.5rem; }
 
-.directorioestudiante__estu { padding: .5rem; width: 5rem; font-weight: bold; border: 1px solid #fff; }
+.directorioestudiante__estu { padding: .8rem; width: 7rem; font-weight: bold; font-size: 1.3rem; border: 1px solid #fff; }
 
-.directorioestudiante__estux { background-color: #fff; padding: .5rem; width: 20rem; }
+.directorioestudiante__estux { background-color: #fff; padding: .8rem; width: 30rem; font-size: 1.3rem; }
 
-.directorioestudiante__titlephone { padding: .5rem; width: 5rem; font-weight: bold; border: 1px solid #fff; }
+/* loco */
+.directorioestudiante__titlephone { padding: .8rem; width: 7rem; font-weight: bold; font-size: 1.3rem; border: 1px solid #fff; }
 
-.directorioestudiante__numberphone { padding: .5rem; width: 10rem; background-color: #fff; }
+.directorioestudiante__numberphone { padding: .8rem; width: 19rem; font-size: 1.3rem; background-color: #fff; }
 
-.directorioestudiante__call, .directorioestudiante__whatsapp { padding: .5rem; width: 4rem; text-align: center; background-color: cyan; }
+.directorioestudiante__call, .directorioestudiante__whatsapp { padding: .8rem; width: 4rem; text-align: center; font-size: 1.6rem; background-color: cyan; }
 
+/* pero */
 .directorioestudiante__namePa { display: flex; justify-content: center; }
 
 .footer { background-color: var(--secondary); color: var(--primary); }

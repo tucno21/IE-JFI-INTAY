@@ -51,8 +51,9 @@
 
 .directorioestudiante__titlegeneral{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
+    padding: 1.5rem;
 }
 
 .directorioestudiante__datos{
@@ -64,43 +65,49 @@
     /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
+    margin: 1.5rem;
 }
 
 .directorioestudiante__estu{
-    padding: .5rem;
-    width: 5rem;
+    padding: .8rem;
+    width: 7rem;
     font-weight: bold;
+    font-size: 1.3rem;
     border: 1px solid #fff;
 }
 
 .directorioestudiante__estux{
     background-color: #fff;
-    padding: .5rem;
-    width: 20rem;
+    padding: .8rem;
+    width: 30rem;
+    font-size: 1.3rem;
 }
-//==========================0
+/* loco */
 .directorioestudiante__titlephone{
-    padding: .5rem;
-    width: 5rem;
+    padding: .8rem;
+    width: 7rem;
     font-weight: bold;
+    font-size: 1.3rem;
     border: 1px solid #fff;
 }
 
 .directorioestudiante__numberphone{
-    padding: .5rem;
-    width: 10rem;
+    padding: .8rem;
+    width: 19rem;
+    font-size: 1.3rem;
     background-color: #fff;
 }
 
 .directorioestudiante__call,
 .directorioestudiante__whatsapp{
-    padding: .5rem;
+    padding: .8rem;
     width: 4rem;
     text-align: center;
+    font-size: 1.6rem;
     background-color: cyan;
 }
 
-//=====================================
+/* pero */
 .directorioestudiante__namePa{
     display: flex;
     justify-content: center;
