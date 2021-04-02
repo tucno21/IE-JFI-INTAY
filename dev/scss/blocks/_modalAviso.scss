@@ -1,0 +1,67 @@
+.divModalAviso {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 30000;
+}
+
+.modalBox{
+    background-color: #fff;
+    border: 2px solid $green;
+    border-radius: 10px;
+    box-shadow: $shade; 
+}
+
+.divModalContenido {
+    margin: 5vh auto;
+    // border-radius: 5px;
+
+}
+
+.modalAviso-header{
+    display: none;
+    // background-color: $green;
+    text-align: center;
+    color: $green;
+}
+
+.modalAviso-header-title{
+    
+    @include laptop{
+        font-size: 3rem;
+    }
+}
+
+.modalAviso-contenido{
+}
+
+.modalAviso-contenido-img{
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include laptop{
+        width: 100%;
+        height: 78vh;
+        border-radius: 10px;
+    }
+}
+
+.modalAviso-close{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.modalAviso-close-x{
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: $green;
+    color:#fff;
+}

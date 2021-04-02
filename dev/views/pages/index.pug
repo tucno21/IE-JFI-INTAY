@@ -32,5 +32,30 @@ block main
 block footer
     include ../includes/footer
 
+    script.
+        jsOpenModal("modalAviso.html", 80)
+        function jsOpenModal(url, width) {
+        let divModalAviso = document.createElement("div");
+        divModalAviso.className = "divModalAviso";
+        divModalAviso.id = "divModalAviso";
+        let divModalContenido = document.createElement("div");
+        divModalContenido.className = "divModalContenido";
+        divModalContenido.id = "divModalContenido";
+        divModalContenido.style.width = width + "%";
+        fetch(url)
+        .then(function (res) {
+        return res.text();
+        })
+        .then(function (texto) {
+        document.getElementById("divModalContenido").innerHTML = texto;
+        })
+        document.body.appendChild(divModalAviso);
+        divModalAviso.appendChild(divModalContenido);
+        }
+        function jsRemoveModal() {
+        let divModalAviso = document.getElementById("divModalAviso");
+        document.body.removeChild(divModalAviso);
+        }
+
 
 //- iframe.iframe_index(src='https://script.google.com/a/ayacucho.edu.pe/macros/s/AKfycbzM-vNN1sWq-qmw3AZydDvMp25-LbXX63BN76KAPw/exec')
