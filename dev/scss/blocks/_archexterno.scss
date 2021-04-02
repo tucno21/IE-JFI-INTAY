@@ -39,3 +39,69 @@
         border-radius: .5rem;
     }
 }
+
+//=======================================
+//para el directorio de los estudiantes
+.directorioestudiante{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.directorioestudiante__titlegeneral{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.directorioestudiante__datos{
+    border: 2px solid #fff;
+    width: 100%;
+}
+
+.directorioestudiante__nameEs{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+}
+
+.directorioestudiante__estu{
+    padding: .5rem;
+    width: 5rem;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+.directorioestudiante__estux{
+    background-color: #fff;
+    padding: .5rem;
+    width: 20rem;
+}
+//==========================0
+.directorioestudiante__titlephone{
+    padding: .5rem;
+    width: 5rem;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+.directorioestudiante__numberphone{
+    padding: .5rem;
+    width: 10rem;
+    background-color: #fff;
+}
+
+.directorioestudiante__call,
+.directorioestudiante__whatsapp{
+    padding: .5rem;
+    width: 4rem;
+    text-align: center;
+    background-color: cyan;
+}
+
+//=====================================
+.directorioestudiante__namePa{
+    display: flex;
+    justify-content: center;
+}
