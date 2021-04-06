@@ -229,6 +229,12 @@ template { display: none; }
 
 .noticia-ie__imagen img { box-shadow: var(--shade); max-width: 95%; }
 
+.contadorVisitas { text-align: center; }
+
+.contadorVisitas__title { font-size: 1.4rem; font-weight: bold; }
+
+.contadorVisitas__number { border: 0px solid; display: inline; }
+
 .divModalAviso { width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: fixed; top: 0px; left: 0px; z-index: 30000; }
 
 .modalBox { background-color: #fff; border: 2px solid var(--green); border-radius: 10px; box-shadow: var(--shade); }
