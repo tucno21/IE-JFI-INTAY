@@ -1,17 +1,24 @@
 .schedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 98%;
+        width: 90%;
         margin: 1rem 0;
+
+        @include laptop{
+            width: 70%;
+        }
     }
     
     &__image{
         max-width: 100%;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 
     &__paragraph{
