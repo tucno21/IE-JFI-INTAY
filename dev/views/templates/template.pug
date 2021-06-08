@@ -20,6 +20,20 @@ html(lang="es")
         meta(property='og:site_name' content='IE José Felíx Iguaín - Intay - Luricocha')
 
     body
+        .menu-container
+            .logo__menu
+                label#menu-toggle.menu__show(for="checked")
+                    i.fas.fa-bars
+                p.logo__menu-title Menu
+            ul#top-menu.top-menu.menu
+                a(href="https://www.facebook.com/jose.felixiguain.39" target='_blank').face-link
+                    i.face-icon.fab.fa-facebook-square
+
+                li.menu__item: a.menu__link(href='/') inicio
+                li.menu__item: a.menu__link(href='docentes.html') docentes
+                li.menu__item: a.menu__link(href='estudiantes.html') estudiantes
+                li.menu__item: a.menu__link(href='padres.html') padres
+                li.menu__item: a.menu__link(href='documentos.html') documentos
         header#header.header
             block header
             block slider-logo

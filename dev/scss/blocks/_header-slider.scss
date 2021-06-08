@@ -4,7 +4,10 @@ padding: 0;
 display: flex;
 justify-content: center;
 align-items: center;
+
+margin-top: 1px;
     @include laptop{
+        margin-top: 3px
     }
 
 }
@@ -13,7 +16,12 @@ align-items: center;
 .slides__images img,
 .navigation-manual,
 .navigation-auto{
-width: 100vw;
+width: 98vw;
+
+
+@include laptop{
+    width: 90vw;
+}
 
     // @include laptop{
     //     width: 88vw;
@@ -41,6 +49,8 @@ height: 180px;
 
 .slider__container{
 overflow: hidden;
+border: 5px solid $green;
+box-shadow: $shade;
 }
 
 .slides{
