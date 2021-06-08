@@ -432,7 +432,7 @@ template { display: none; }
 
 .footer__home p, .footer__numero p { margin-left: 1rem; padding: .5rem 0; }
 
-.footer__dev { text-align: center; font-weight: 200; opacity: .5; padding: .5rem; }
+.footer__dev { text-align: center; font-weight: 200; opacity: .5; padding: .5rem; display: block; color: var(--primary); text-decoration: none; }
 
 @media screen and (min-width: 1024px) { .footer__info-container { display: flex; align-items: center; justify-content: space-around; }
   .footer__contacto { font-size: 1.8rem; }

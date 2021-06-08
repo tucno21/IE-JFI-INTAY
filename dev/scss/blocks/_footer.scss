@@ -25,6 +25,9 @@
         font-weight: $line-font-slim;
         opacity: .5;
         padding: .5rem;
+        display: block;
+        color: $primary;
+        text-decoration: none;
     }
 
     @include laptop{
