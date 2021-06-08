@@ -157,7 +157,11 @@
         &__link{
             
             &:hover{
-                background-color: black;
+                background-color: $primary;
+                color:$dark-green;
+                border-radius: 1.5rem 0 1.5rem 0;
+                opacity: .5;
+                transition: .3s;
             }
         }
     }

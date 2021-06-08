@@ -20,6 +20,7 @@
         color: $secondary;
         text-transform: uppercase;
         border: $border-line;
+        border-radius: .4rem;
 
         &-image{
             width: 10rem;
@@ -53,6 +54,7 @@
             &:hover{
                 background-color: $green;
                 color: $primary;
+                transition: .3s;
             }
         }
     }

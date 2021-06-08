@@ -174,7 +174,7 @@ template { display: none; }
 .menu__link { color: var(--primary); padding: 1.5rem 1.5rem; display: block; text-decoration: none; font-size: 1.5rem; text-transform: uppercase; }
 
 @media screen and (min-width: 1024px) { .menu { position: relative; background-color: var(--dark-green); transform: translateX(0); flex-direction: row; height: auto; justify-content: flex-end; }
-  .menu__link:hover { background-color: black; } }
+  .menu__link:hover { background-color: var(--primary); color: var(--dark-green); border-radius: 1.5rem 0 1.5rem 0; opacity: .5; transition: .3s; } }
 
 .top-menu.activador { transition: transform .3s; transform: translate(0); }
 
@@ -230,7 +230,7 @@ template { display: none; }
 
 .mainindex { padding: 1rem; }
 
-.mainindex__card { display: block; margin: 1.5rem; padding: 1rem; text-align: center; box-shadow: var(--shade); text-decoration: none; color: var(--secondary); text-transform: uppercase; border: var(border-line); }
+.mainindex__card { display: block; margin: 1.5rem; padding: 1rem; text-align: center; box-shadow: var(--shade); text-decoration: none; color: var(--secondary); text-transform: uppercase; border: var(border-line); border-radius: .4rem; }
 
 .mainindex__card-image { width: 10rem; height: 9rem; }
 
@@ -240,7 +240,7 @@ template { display: none; }
   .mainindex__card { height: 15rem; width: 29rem; }
   .mainindex__card-image { width: 11rem; height: 10rem; }
   .mainindex__card-title { font-size: 1.8rem; }
-  .mainindex__card:hover { background-color: var(--green); color: var(--primary); } }
+  .mainindex__card:hover { background-color: var(--green); color: var(--primary); transition: .3s; } }
 
 .noticia-ie { padding: 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 

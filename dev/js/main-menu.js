@@ -15,7 +15,7 @@ var counter = 1;
         if (counter > 4) {
         counter = 1;
         }
-    }, 5000);
+    }, 7000);
 
 
 let thumbnails = document.getElementsByClassName('ventas-slider__thumbnail')
