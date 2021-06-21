@@ -1,0 +1,183 @@
+.libreta{
+
+
+    @include tablet{
+        width:80%;
+    }
+
+    @include laptop{
+        width:60%;
+    }
+
+    width:100%;
+
+    &__title{
+        text-align:center;
+        font-size:1.7rem;
+        text-transform:uppercase;
+        
+    }
+
+    &__datos{
+        margin: 1rem 0;
+        font-size:1.3rem;
+
+
+        &Box{
+            display:flex;
+            justify-content:center;
+
+            &-a{
+                border:1px solid #000;
+                padding: .5rem;
+                width:8rem;
+                background-color:rgb(188, 188, 196);
+            }
+            &-b{
+                border:1px solid #000;
+                padding: .5rem;
+                width:18rem;
+            }
+
+        }
+    }
+
+    &__calificacion{
+        
+
+    }
+}
+
+.calificacion{
+    &__title{
+        background-color:rgb(188, 188, 196);
+        display:grid;
+        grid-template-columns: 8rem 2fr 1fr 1fr 1fr 1fr 2fr;
+        font-size:1.3rem;
+        
+
+        @include tablet{
+            grid-template-columns: 18rem 2fr 1fr 1fr 1fr 1fr 2fr;
+        }
+        
+        & p{
+            border:1px solid #000;
+            padding:.8rem 0;
+            display:flex;
+            text-align:center;
+            justify-content:center;
+            align-items:center;
+        }
+    }
+
+    &__areas{
+        display:grid;
+        grid-template-columns: 8rem 1fr;
+        border: 1px solid #000;
+
+        @include tablet{
+            grid-template-columns: 18rem 1fr;
+            font-size:1.3rem;
+        }
+    }
+
+    &__areas-title{
+
+        & p{
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            border-left: 1px solid #000;
+            text-align: center;
+            height:99%;
+            display:flex;
+            text-align:center;
+            justify-content:center;
+            align-items:center;
+        }
+    }
+
+    &__box{
+        display:grid;
+        grid-template-rows: repeat(auto,1fr);
+
+    }
+
+
+    &__competencias{
+        display:grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+        font-size:1.3rem;
+        
+
+
+        & p{
+            // border:1px solid #000;
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            display:flex;
+            text-align:center;
+            justify-content:center;
+            align-items:center;
+            padding:.8rem 0;
+        }
+    }
+
+}
+
+.libretaAviso{
+    border:1px solid #000;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    
+    text-align: center;
+    font-size:1.5rem;
+
+    @include tablet{
+        width:80%;
+    }
+
+    @include laptop{
+        width:60%;
+    }
+
+    & p{
+        padding: .8rem;
+    }
+}
+
+.libretaComp {
+    margin-top: 3rem;
+
+
+    @include tablet{
+        width:80%;
+    }
+
+    @include laptop{
+        width:60%;
+    }
+
+    &__titleP{
+        text-align: center;
+        border-bottom: 1px solid #000;
+        font-size: 1.6rem;
+    }
+
+    &__title{
+        text-align: center;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        background-color:rgb(188, 188, 196);
+        padding: .8rem 0;
+        font-size: 1.3rem;
+    }
+
+    &__box{
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        padding: .5rem .2rem;
+        font-size: 1.1rem;
+    }
+}

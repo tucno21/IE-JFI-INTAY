@@ -226,7 +226,7 @@ template { display: none; }
 
 #radio4:checked ~ .first { margin-left: -60%; }
 
-.main { min-height: 68vh; padding: 1rem; display: flex; justify-content: center; }
+.main { min-height: 68vh; padding: 1rem; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 .mainindex { padding: 1rem; }
 
@@ -423,6 +423,60 @@ template { display: none; }
 .directorioestudiante__call, .directorioestudiante__whatsapp { padding: .8rem; width: 4rem; text-align: center; font-size: 1.6rem; background-color: cyan; }
 
 .directorioestudiante__namePa { display: flex; justify-content: center; }
+
+.libreta { width: 100%; }
+
+@media screen and (min-width: 500px) { .libreta { width: 80%; } }
+
+@media screen and (min-width: 1024px) { .libreta { width: 60%; } }
+
+.libreta__title { text-align: center; font-size: 1.7rem; text-transform: uppercase; }
+
+.libreta__datos { margin: 1rem 0; font-size: 1.3rem; }
+
+.libreta__datosBox { display: flex; justify-content: center; }
+
+.libreta__datosBox-a { border: 1px solid #000; padding: .5rem; width: 8rem; background-color: #bcbcc4; }
+
+.libreta__datosBox-b { border: 1px solid #000; padding: .5rem; width: 18rem; }
+
+.calificacion__title { background-color: #bcbcc4; display: grid; grid-template-columns: 8rem 2fr 1fr 1fr 1fr 1fr 2fr; font-size: 1.3rem; }
+
+@media screen and (min-width: 500px) { .calificacion__title { grid-template-columns: 18rem 2fr 1fr 1fr 1fr 1fr 2fr; } }
+
+.calificacion__title p { border: 1px solid #000; padding: .8rem 0; display: flex; text-align: center; justify-content: center; align-items: center; }
+
+.calificacion__areas { display: grid; grid-template-columns: 8rem 1fr; border: 1px solid #000; }
+
+@media screen and (min-width: 500px) { .calificacion__areas { grid-template-columns: 18rem 1fr; font-size: 1.3rem; } }
+
+.calificacion__areas-title p { border-bottom: 1px solid #000; border-right: 1px solid #000; border-left: 1px solid #000; text-align: center; height: 99%; display: flex; text-align: center; justify-content: center; align-items: center; }
+
+.calificacion__box { display: grid; grid-template-rows: repeat(auto, 1fr); }
+
+.calificacion__competencias { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr; font-size: 1.3rem; }
+
+.calificacion__competencias p { border-bottom: 1px solid #000; border-right: 1px solid #000; display: flex; text-align: center; justify-content: center; align-items: center; padding: .8rem 0; }
+
+.libretaAviso { border: 1px solid #000; border-radius: 1rem; margin-top: 3rem; text-align: center; font-size: 1.5rem; }
+
+@media screen and (min-width: 500px) { .libretaAviso { width: 80%; } }
+
+@media screen and (min-width: 1024px) { .libretaAviso { width: 60%; } }
+
+.libretaAviso p { padding: .8rem; }
+
+.libretaComp { margin-top: 3rem; }
+
+@media screen and (min-width: 500px) { .libretaComp { width: 80%; } }
+
+@media screen and (min-width: 1024px) { .libretaComp { width: 60%; } }
+
+.libretaComp__titleP { text-align: center; border-bottom: 1px solid #000; font-size: 1.6rem; }
+
+.libretaComp__title { text-align: center; border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; background-color: #bcbcc4; padding: .8rem 0; font-size: 1.3rem; }
+
+.libretaComp__box { border-bottom: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #000; padding: .5rem .2rem; font-size: 1.1rem; }
 
 .footer { background-color: var(--secondary); color: var(--primary); }
 
