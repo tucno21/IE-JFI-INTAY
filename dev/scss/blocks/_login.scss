@@ -104,24 +104,16 @@
             border-color: $primary;
             background-color: $green;
         }
-
-        //         @include tablet {
-        //             width: 40rem;
-        //         }
-
-        //         @include laptop {
-        //             width: 35rem;
-        //         }
     }
 
     &__error {
         font-size: 1.2rem;
-        color: rgb(214, 15, 15);
+        color: #d60f0f;
         visibility: hidden;
 
-        &.active {
-            visibility: visibility;
-        }
+        // &.active {
+        //     visibility: visibility;
+        // }
     }
 
     &__button {
@@ -141,6 +133,7 @@
         text-transform: uppercase;
         border-radius: 0.3rem;
         margin-top: 3rem;
+        cursor: pointer;
 
         @include tablet {
             width: 60%;
