@@ -1,126 +1,136 @@
 //==========iframe
-.login-docentesjfi{
+.login-docentesjfi {
     width: 100%;
 
-    @include laptop{
+    @include laptop {
         width: 78%;
     }
 }
 
-.iframe{
+.iframe {
     height: 60rem;
     width: 100%;
     border: none;
-    
-    @include laptop{
+
+    @include laptop {
         height: 51rem;
     }
 }
 
 //====================================
 
-.form-container{
+.form-container {
     margin: 2rem 0;
     padding: 1rem;
     width: 100%;
 
-    @include laptop{
+    @include laptop {
         width: auto;
     }
 }
 
-.form{
+.form {
     background-color: $green;
-    text-align: center;
+    // height: 55rem;
+    width: 95%;
     position: relative;
-    padding: 1rem;
-    height: 40rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3rem 1rem;
+    text-align: center;
 
-    @include laptop{
-        height: 40rem;
-        width: 50rem;
+    @include tablet {
+        width: 75%;
     }
 
-    &__logo{
+    @include laptop {
+        width: 55rem;
+    }
+
+    &__logo {
         height: 6rem;
         width: 6rem;
         padding-top: 1rem;
     }
 
-    &__title{
+    &__title {
         color: $primary;
         font-size: $size-font-superbig;
         padding: 1rem;
     }
 
-    &__subtitle{
+    &__subtitle {
         font-size: $size-font-medium;
         font-weight: $line-font-slim;
         color: $primary;
-        padding-bottom: .6rem;
+        padding-bottom: 0.6rem;
         margin-bottom: 2rem;
     }
 
-    &__box{
-        position: relative;
-        padding-bottom: .4rem;
+    &__box {
+        margin-bottom: 1.5rem;
     }
-    
-    &__input{
+
+    &__label {
+        display: block;
+        position: relative;
+        left: 10%;
+        text-align: left;
+        font-size: 1.8rem;
+        cursor: text;
+        color: $primary;
+        padding: 0.5rem;
+    }
+
+    &__input {
+        display: block;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
         outline: none;
-        display: block;
         background-color: $green;
         border: 2px solid $dark-green;
-        margin: 1.2rem 0;
-        padding: .8rem;
-        border-radius: .3rem;
+        padding: 0.8rem;
+        border-radius: 0.3rem;
         color: $primary;
         height: 3rem;
-        width: 90%;
+        width: 80%;
         font-size: $size-font-medium;
 
-        &:hover{
+        &:hover {
             border-color: $primary;
         }
-        &:focus{
+        &:focus {
             border-color: $primary;
             background-color: $green;
         }
 
-        @include tablet{
-            width: 40rem;
-        }
+        //         @include tablet {
+        //             width: 40rem;
+        //         }
 
-        @include laptop{
-            width: 35rem;
+        //         @include laptop {
+        //             width: 35rem;
+        //         }
+    }
+
+    &__error {
+        font-size: 1.2rem;
+        color: rgb(214, 15, 15);
+        visibility: hidden;
+
+        &.active {
+            visibility: visibility;
         }
     }
 
-    &__label{
-        position: absolute;
-        color: $primary;
-        left: 10%;
-        top: 25%;
-        // transform: translateX(-50%);
-        font-weight: $line-font-slim;
-        font-size: 1.8rem;
-        cursor: text;
-        background-color: $green;
-        transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-        color: $primary;
-        padding: .5rem;
-    }
-
-    &__button{
+    &__button {
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         width: 60%;
-        height: 4rem;
+        height: 5rem;
         background-color: $primary;
         font-size: $size-font-medium;
         outline: none;
@@ -129,29 +139,20 @@
         font-weight: $line-font-semi-thick;
         letter-spacing: 1px;
         text-transform: uppercase;
-        border-radius: .3rem;
-        margin-top: 1.5rem;
+        border-radius: 0.3rem;
+        margin-top: 3rem;
 
-        @include tablet{
-            width: 40%;
+        @include tablet {
+            width: 60%;
         }
 
-        @include laptop{
+        @include laptop {
             width: 60%;
 
-            &:hover{
+            &:hover {
                 background-color: $dark-green;
                 color: $primary;
             }
         }
-
     }
-}
-
-.form__input:focus ~ .form__label,
-.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-    top: -10%;
-    font-size: 1.5rem;
-    border-radius: .5rem;
-    border: 1px solid $primary;
 }

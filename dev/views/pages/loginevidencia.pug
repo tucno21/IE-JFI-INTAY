@@ -10,14 +10,14 @@ block main
             p.form__title Informe de progreso de los Aprendizajes
             p.form__subtitle La información es personalizada
             .form__box
-                input#nombremayu(name='INPUT_NAME' type='text').form__input
                 label.form__label.form__label-a(for='nombremayu') Nombre(s)
-                //- p#error-msg2 más de tres caracteres, nombre(s) completo, en mayúscula y sin tildes
+                input#nombremayu(name='INPUT_NAME' type='text').form__input
+                p#error-msg2.form__error más de tres caracteres, nombre(s) completo, en mayúscula y sin tildes
 
             .form__box
-                input#numeroDNI(name='INPUT_DNI' type='number').form__input
                 label.form__label.form__label-b(for='numeroDNI') N° de DNI
-                //- p#error-msg1 el DNI tiene 8 digitos
+                input#numeroDNI(name='INPUT_DNI' type='number').form__input
+                p#error-msg1.form__error el DNI tiene 8 digitos
 
             button.form__button Buscar
 

@@ -43,12 +43,14 @@
           <p class="form__title">Informe de progreso de los Aprendizajes</p>
           <p class="form__subtitle">La información es personalizada</p>
           <div class="form__box">
-            <input class="form__input" id="nombremayu" name="INPUT_NAME" type="text">
             <label class="form__label form__label-a" for="nombremayu">Nombre(s)</label>
+            <input class="form__input" id="nombremayu" name="INPUT_NAME" type="text">
+            <p class="form__error" id="error-msg2">más de tres caracteres, nombre(s) completo, en mayúscula y sin tildes</p>
           </div>
           <div class="form__box">
-            <input class="form__input" id="numeroDNI" name="INPUT_DNI" type="number">
             <label class="form__label form__label-b" for="numeroDNI">N° de DNI</label>
+            <input class="form__input" id="numeroDNI" name="INPUT_DNI" type="number">
+            <p class="form__error" id="error-msg1">el DNI tiene 8 digitos</p>
           </div>
           <button class="form__button">Buscar</button>
         </form>
