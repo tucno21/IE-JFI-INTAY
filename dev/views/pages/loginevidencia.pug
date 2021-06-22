@@ -5,16 +5,16 @@ block header
 
 block main
     .form-container
-        form(action='#').form
+        form.form(action='https://script.google.com/macros/s/AKfycbwbmL0rDP-HifKEpYze4RzYEG0toh68re-32XaaYC4giiDQkZ1b/exec' method='get' target='_blank')
             img(src="assets/img/general/estudiantes.svg" alt="logo estudiantes").form__logo
             p.form__title Informe de progreso de los Aprendizajes
             p.form__subtitle La información es personalizada
             .form__box
-                input#input1(type='text' placeholder=' ').form__input
+                input#input1(name='INPUT_NAME' type='text' placeholder=' ').form__input
                 label.form__label.form__label-a(for='email') Nombre(s)
 
             .form__box
-                input#input2(type='password' placeholder=' ').form__input
+                input#input2(name='INPUT_DNI' type='password' placeholder=' ').form__input
                 label.form__label.form__label-b(for='email') N° de DNI
 
             button(name='masuk').form__button Entrar

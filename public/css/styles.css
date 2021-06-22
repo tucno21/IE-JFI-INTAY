@@ -424,7 +424,7 @@ template { display: none; }
 
 .directorioestudiante__namePa { display: flex; justify-content: center; }
 
-.libreta { width: 100%; }
+.libreta { padding: 1rem; width: 100%; }
 
 @media screen and (min-width: 500px) { .libreta { width: 80%; } }
 
@@ -458,7 +458,7 @@ template { display: none; }
 
 .calificacion__competencias p { border-bottom: 1px solid #000; border-right: 1px solid #000; display: flex; text-align: center; justify-content: center; align-items: center; padding: .8rem 0; }
 
-.libretaAviso { border: 1px solid #000; border-radius: 1rem; margin-top: 3rem; text-align: center; font-size: 1.5rem; }
+.libretaAviso { padding: 1rem; border: 1px solid #000; border-radius: 1rem; margin-top: 3rem; text-align: center; font-size: 1.5rem; }
 
 @media screen and (min-width: 500px) { .libretaAviso { width: 80%; } }
 
@@ -466,7 +466,7 @@ template { display: none; }
 
 .libretaAviso p { padding: .8rem; }
 
-.libretaComp { margin-top: 3rem; }
+.libretaComp { padding: 1rem; margin-top: 3rem; }
 
 @media screen and (min-width: 500px) { .libretaComp { width: 80%; } }
 
