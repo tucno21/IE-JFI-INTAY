@@ -378,21 +378,26 @@ template { display: none; }
 
 .form__box { position: relative; padding-bottom: .4rem; }
 
-.form__input { position: relative; left: 50%; transform: translateX(-50%); outline: none; display: block; background-color: var(--green); border: 2px solid var(--dark-green); margin: 1.2rem 0; padding: .3rem; border-radius: .3rem; color: var(--primary); height: 3rem; width: 24rem; font-size: 1.5rem; }
+.form__input { position: relative; left: 50%; transform: translateX(-50%); outline: none; display: block; background-color: var(--green); border: 2px solid var(--dark-green); margin: 1.2rem 0; padding: .8rem; border-radius: .3rem; color: var(--primary); height: 3rem; width: 90%; font-size: 1.5rem; }
 
 .form__input:hover { border-color: var(--primary); }
 
-.form__input:focus { border-color: var(--primary); }
+.form__input:focus { border-color: var(--primary); background-color: var(--green); }
 
-@media screen and (min-width: 1024px) { .form__input { width: 25rem; } }
+@media screen and (min-width: 500px) { .form__input { width: 40rem; } }
 
-.form__label { position: absolute; color: var(--primary); left: 50%; top: 34%; transform: translateX(-50%); font-weight: 200; font-size: 1.4rem; cursor: text; background-color: var(--green); transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in; color: var(--primary); padding: 0 .5rem; }
+@media screen and (min-width: 1024px) { .form__input { width: 35rem; } }
 
-.form__button { width: 12rem; height: 3.5rem; background-color: var(--primary); font-size: 1.5rem; outline: none; color: var(--dark-green); border: 1px solid var(--primary); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; border-radius: .3rem; margin-top: 1.5rem; }
+.form__label { position: absolute; color: var(--primary); left: 10%; top: 25%; font-weight: 200; font-size: 1.8rem; cursor: text; background-color: var(--green); transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in; color: var(--primary); padding: .5rem; }
 
-@media screen and (min-width: 1024px) { .form__button:hover { background-color: var(--dark-green); color: var(--primary); } }
+.form__button { width: 60%; height: 4rem; background-color: var(--primary); font-size: 1.5rem; outline: none; color: var(--dark-green); border: 1px solid var(--primary); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; border-radius: .3rem; margin-top: 1.5rem; }
 
-.form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label { top: 7%; font-size: 1.2rem; }
+@media screen and (min-width: 500px) { .form__button { width: 40%; } }
+
+@media screen and (min-width: 1024px) { .form__button { width: 60%; }
+  .form__button:hover { background-color: var(--dark-green); color: var(--primary); } }
+
+.form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label { top: -10%; font-size: 1.5rem; border-radius: .5rem; border: 1px solid var(--primary); }
 
 .listaform { display: flex; flex-direction: column; align-items: center; padding: 1rem; background-color: var(--green); }
 
