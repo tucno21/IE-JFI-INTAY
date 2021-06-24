@@ -1,0 +1,33 @@
+extends ../templates/template
+
+block header
+    include ../includes/header-menu
+
+block main
+    .teaching
+        h2.teaching__title Directorio del Personal de la IE
+        .teaching-directory.teaching-directory-title
+            p.teaching-directory__orden N°
+            p.teaching-directory__name Apellido y Nombres
+            p.teaching-directory__area Area a cargo
+            p.teaching-directory__phone N° Celular
+            p.teaching-directory__call.teaching-directory__call-title Ll
+            p.teaching-directory__whatsapp.teaching-directory__whatsapp-title Wp 
+        .teaching-directory
+            p.teaching-directory__orden 1
+            p.teaching-directory__name Ferrua Taype Valeriano
+            p.teaching-directory__area Director
+            p.teaching-directory__phone 913657733
+            p.teaching-directory__call
+                a(href="tel:913657733"): i.fas.fa-phone-volume
+            p.teaching-directory__whatsapp
+                a(href="https://wa.me/51913657733" target="_blank"): i.fab.fa-whatsapp
+
+    .pruebaextrama 
+
+
+
+
+
+block footer
+    include ../includes/footer

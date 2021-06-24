@@ -178,53 +178,61 @@ template { display: none; }
 
 .top-menu.activador { transition: transform .3s; transform: translate(0); }
 
-.slider { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; margin-top: 1px; }
+.slider__container { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; margin-top: 1px; }
 
-@media screen and (min-width: 1024px) { .slider { margin-top: 3px; } }
+@media screen and (min-width: 1024px) { .slider__container { margin-top: 3px; } }
 
-.slider__container, .slides__images img, .navigation-manual, .navigation-auto { width: 98vw; }
+.slider { width: 96%; overflow: hidden; border: 5px solid var(--green); box-shadow: var(--shade); position: relative; }
 
-@media screen and (min-width: 1024px) { .slider__container, .slides__images img, .navigation-manual, .navigation-auto { width: 90vw; } }
+@media screen and (min-width: 1024px) { .slider { height: 60%; } }
 
-.slider__container, .slides, .slides__images img { height: 180px; }
+.slides { height: 100%; display: flex; }
 
-@media screen and (min-width: 500px) { .slider__container, .slides, .slides__images img { height: 300px; } }
+.slides input { display: none; }
 
-@media screen and (min-width: 1024px) { .slider__container, .slides, .slides__images img { height: 470px; } }
+.slide { background: var(--green); min-width: 100%; transition: 2s; }
 
-.slider__container { overflow: hidden; border: 5px solid var(--green); box-shadow: var(--shade); }
+.slide img { width: 100%; height: 20rem; }
 
-.slides { position: relative; width: 500%; display: flex; }
+@media screen and (min-width: 500px) { .slide img { height: 37rem; } }
 
-.slides-btn { display: none; }
+@media screen and (min-width: 1024px) { .slide img { height: 47rem; } }
 
-.slides__images { width: 20%; transition: 2s; }
+/*css for manual slide navigation*/
+.navigation-manual { position: absolute; width: 100%; bottom: 10px; display: flex; justify-content: center; gap: 30px; }
 
-/*===================*/
-.navigation-auto, .navigation-manual { position: absolute; display: flex; justify-content: center; }
+.manual-btn { border: 1px solid var(--green); padding: .4rem; border-radius: 50%; cursor: pointer; transition: 1s; }
 
-.auto-btn, .manual-btn { padding: 5px; border-radius: 10px; transition: 1s; }
+@media screen and (min-width: 500px) { .manual-btn { border: 2px solid var(--green); padding: .5rem; } }
 
-.auto-btn:not(:last-child), .manual-btn:not(:last-child) { margin-right: 40px; }
+@media screen and (min-width: 1024px) { .manual-btn { border: 3px solid var(--green); padding: .7rem; } }
 
-/*css for automatic navigation*/
-.navigation-auto { margin-top: 2rem; z-index: -1; }
-
-.auto-btn:not(:last-child) { margin-right: 40px; }
-
-.navigation-manual { margin-top: -3rem; }
-
-.manual-btn { cursor: pointer; }
-
-.manual-btn:hover { background: #493323; }
+.manual-btn:hover { background: #fff; }
 
 #radio1:checked ~ .first { margin-left: 0; }
 
-#radio2:checked ~ .first { margin-left: -20%; }
+#radio2:checked ~ .first { margin-left: -100%; }
 
-#radio3:checked ~ .first { margin-left: -40%; }
+#radio3:checked ~ .first { margin-left: -200%; }
 
-#radio4:checked ~ .first { margin-left: -60%; }
+#radio4:checked ~ .first { margin-left: -300%; }
+
+/*css for automatic navigation*/
+.navigation-auto { position: absolute; width: 100%; bottom: 10px; display: flex; justify-content: center; gap: 30px; }
+
+.navigation-auto div { border: 1px solid var(--green); padding: .4rem; border-radius: 50%; cursor: pointer; transition: 1s; }
+
+@media screen and (min-width: 500px) { .navigation-auto div { border: 2px solid var(--green); padding: .5rem; } }
+
+@media screen and (min-width: 1024px) { .navigation-auto div { border: 3px solid var(--green); padding: .7rem; } }
+
+#radio1:checked ~ .navigation-auto .auto-btn1 { background: #fff; }
+
+#radio2:checked ~ .navigation-auto .auto-btn2 { background: #fff; }
+
+#radio3:checked ~ .navigation-auto .auto-btn3 { background: #fff; }
+
+#radio4:checked ~ .navigation-auto .auto-btn4 { background: #fff; }
 
 .main { min-height: 68vh; padding: 1rem; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 

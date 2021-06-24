@@ -1,29 +1,29 @@
 // image slider start
-.slider
-    .slider__container
+.slider__container
+    .slider
         .slides
             // radio buttons start
-            input#radio1.slides-btn(type='radio' name='radio-btn')
-            input#radio2.slides-btn(type='radio' name='radio-btn')
-            input#radio3.slides-btn(type='radio' name='radio-btn')
-            input#radio4.slides-btn(type='radio' name='radio-btn')
+            input#radio1(type='radio' name='radio-btn')
+            input#radio2(type='radio' name='radio-btn')
+            input#radio3(type='radio' name='radio-btn')
+            input#radio4(type='radio' name='radio-btn')
             // radio buttons end
             // slide images start
-            .slides__images.first
+            .slide.first
                 img(src='assets/img/slider/1.jpg' alt='colegio intay')
-            .slides__images
-                img(src='assets/img/slider/2.jpg' alt='aviso del colegio intay')
-            .slides__images
-                img(src='assets/img/slider/3.jpg' alt='actividades de jfi')
-            .slides__images
-                img(src='assets/img/slider/4.jpg' alt='peronal de la ie')
+            .slide
+                img(src='assets/img/slider/2.jpg' alt='aviso intay')
+            .slide
+                img(src='assets/img/slider/3.jpg' alt='actividades jfi')
+            .slide
+                img(src='assets/img/slider/4.jpg' alt='peronal ie')
             // slide images end
             // automatic navigation start
             .navigation-auto
-                .auto-btn.auto-btn1
-                .auto-btn.auto-btn2
-                .auto-btn.auto-btn3
-                .auto-btn.auto-btn4
+                .auto-btn1
+                .auto-btn2
+                .auto-btn3
+                .auto-btn4
             // automatic navigation end
             // manual navigation start
         .navigation-manual
@@ -32,4 +32,3 @@
             label.manual-btn(for='radio3')
             label.manual-btn(for='radio4')
             // manual navigation end
-// image slider end

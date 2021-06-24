@@ -1,138 +1,152 @@
-.slider{
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: center;
-align-items: center;
+.slider__container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
 
-margin-top: 1px;
     @include laptop{
         margin-top: 3px
     }
-
 }
 
-.slider__container,
-.slides__images img,
-.navigation-manual,
-.navigation-auto{
-width: 98vw;
 
 
-@include laptop{
-    width: 90vw;
-}
-
-    // @include laptop{
-    //     width: 88vw;
-    // }
-
-    // @include laptop{
-    //     width: 80vw;
-    // }
-}
-
-.slider__container,
-.slides,
-.slides__images img{
-height: 180px;
-
-    @include tablet{
-        height: 300px;
-    }
+.slider{
+    width: 96%;
+    // height: 80%;
+    overflow: hidden;
+    border: 5px solid $green;
+    box-shadow: $shade;
+    position: relative;
 
     @include laptop{
-        height: 470px;
+        // width: 90%;
+        height: 60%;
     }
-
-}
-
-.slider__container{
-overflow: hidden;
-border: 5px solid $green;
-box-shadow: $shade;
 }
 
 .slides{
-position: relative;
-width: 500%;
-display: flex;
+    height: 100%;
+    display: flex;
 }
 
-.slides-btn{
-display: none;
+.slides input{
+    display: none;
 }
 
-.slides__images{
-width: 20%;
-transition: 2s;
+.slide{
+    background: $green;
+    min-width: 100%;
+    transition: 2s;
 }
 
-/*===================*/
-.navigation-auto,
+.slide img{
+    
+    width: 100%;
+    height: 20rem;
+
+    @include tablet{
+        height: 37rem;
+    }
+
+    @include laptop{
+        height: 47rem;
+    }
+}
+
+
+/*css for manual slide navigation*/
 .navigation-manual{
-position: absolute;
-display: flex;
-justify-content: center;
-// background-color: red;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.auto-btn,
 .manual-btn{
-padding: 5px;
-border-radius: 10px;
-transition: 1s;
+    border: 1px solid $green;
+    padding: .4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+
+    @include tablet{
+        border: 2px solid $green;
+        padding: .5rem;
+    }
+
+    @include laptop{
+        border: 3px solid $green;
+        padding: .7rem;
+    }
 }
 
-.auto-btn:not(:last-child),
-.manual-btn:not(:last-child){
-margin-right: 40px;
+.manual-btn:hover{
+    background: #fff;
 }
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -300%;
+} 
+
 
 /*css for automatic navigation*/
 
 .navigation-auto{
-margin-top: 2rem;
-z-index: -1;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.navigation-auto div{
+    border: 1px solid $green;
+    padding: .4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+
+    @include tablet{
+        border: 2px solid $green;
+        padding: .5rem;
+    }
+
+    @include laptop{
+        border: 3px solid $green;
+        padding: .7rem;
+    }
 }
 
-.auto-btn:not(:last-child){
-margin-right: 40px;
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #fff;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1,
-#radio2:checked ~ .navigation-auto .auto-btn2,
-#radio2:checked ~ .navigation-auto .auto-btn3,
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #fff;
+}
+
 #radio4:checked ~ .navigation-auto .auto-btn4{
-// background: $white;
-}
-
-.navigation-manual{
-margin-top: -3rem;
-// background-color: red;
-}
-
-.manual-btn{
-cursor: pointer;
-}
-
-.manual-btn:hover{
-background: #493323;
-// background: $white;
-}
-
-#radio1:checked ~ .first{
-margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-margin-left: -60%;
+    background: #fff;
 }
