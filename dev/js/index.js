@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 function iniciarApp() {
+    // baseDatos();
     comprobarDNI();
     comprobarNOMBRE();
-    // baseDatos();
 }
+
